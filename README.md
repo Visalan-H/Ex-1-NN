@@ -1,5 +1,5 @@
-![image](https://github.com/user-attachments/assets/fa6186fa-717e-445c-80ad-10b1fad12b26)<H3>ENTER YOUR NAME</H3><H3>VISALAN H</H3>
-<H3>ENTER YOUR REGISTER NO.</H3><H3>212223240183</H3>
+<H3>ENTER YOUR NAME : VISALAN H </H3>
+<H3>ENTER YOUR REGISTER NO: 212223240183</H3>
 <H3>EX. NO.1</H3>
 <H3>DATE</H3>
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
@@ -63,26 +63,32 @@ print(len(X_test))
 
 ## OUTPUT:
 DATASET PREVIEW:
+
 ![image](https://github.com/user-attachments/assets/7cbf7c88-a06d-40b2-981a-c793b33bc474)
 
 FEATURE MATRIX - X VALUES:
+
 ![image](https://github.com/user-attachments/assets/78a9654f-0de8-452b-89d3-0875c3462d74)
 
 TARGET VECTOR - Y VALUES:
+
 ![image](https://github.com/user-attachments/assets/3f9955a1-068a-49b2-b9a2-132a60c0b4ff)
 
 NULL VALUES CHECK:
+
 ![image](https://github.com/user-attachments/assets/40249d18-3014-4cbc-85ae-4a886cdb74d2)
 
 DATASET STATISTICAL SUMMARY:
+
 ![image](https://github.com/user-attachments/assets/601df596-a38f-4fed-9cc2-6bb993a4d7ad)
 
 NORMALIZED DATASET:
+
 ![image](https://github.com/user-attachments/assets/1b84f544-a74a-4d84-a6ac-f68f18233ea6)
 
 TRAINING DATA AND TESTING DATA:
-![image](https://github.com/user-attachments/assets/03bc2adb-9329-4a9b-9905-fe9ed86e14ff)
 
+![image](https://github.com/user-attachments/assets/03bc2adb-9329-4a9b-9905-fe9ed86e14ff)
 
 ## RESULT:
 Thus, Implementation of Data Preprocessing is done in python  using a data set downloaded from Kaggle.
