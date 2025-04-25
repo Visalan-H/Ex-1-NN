@@ -1,5 +1,5 @@
-<H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+![image](https://github.com/user-attachments/assets/fa6186fa-717e-445c-80ad-10b1fad12b26)<H3>ENTER YOUR NAME</H3><H3>VISALAN H</H3>
+<H3>ENTER YOUR REGISTER NO.</H3><H3>212223240183</H3>
 <H3>EX. NO.1</H3>
 <H3>DATE</H3>
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
@@ -37,11 +37,51 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-TYPE YOUR CODE HERE
-
+```py
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+df = pd.read_csv('Churn_Modelling.csv')
+print(df)
+X = df.iloc[:, :-1].values
+print(X)
+y = df.iloc[:, -1].values
+print(y)
+print(df.isnull().sum())
+print(df.describe())
+data = df.drop(['Surname', 'Geography','Gender'], axis=1)
+data.head()
+scaler = MinMaxScaler()
+df1 = pd.DataFrame(scaler.fit_transform(data))
+print(df1)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)
+print(X_train)
+print(len(X_train))
+print(X_test)
+print(len(X_test))
+```
 
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+DATASET PREVIEW:
+![image](https://github.com/user-attachments/assets/7cbf7c88-a06d-40b2-981a-c793b33bc474)
+
+FEATURE MATRIX - X VALUES:
+![image](https://github.com/user-attachments/assets/78a9654f-0de8-452b-89d3-0875c3462d74)
+
+TARGET VECTOR - Y VALUES:
+![image](https://github.com/user-attachments/assets/3f9955a1-068a-49b2-b9a2-132a60c0b4ff)
+
+NULL VALUES CHECK:
+![image](https://github.com/user-attachments/assets/40249d18-3014-4cbc-85ae-4a886cdb74d2)
+
+DATASET STATISTICAL SUMMARY:
+![image](https://github.com/user-attachments/assets/601df596-a38f-4fed-9cc2-6bb993a4d7ad)
+
+NORMALIZED DATASET:
+![image](https://github.com/user-attachments/assets/1b84f544-a74a-4d84-a6ac-f68f18233ea6)
+
+TRAINING DATA AND TESTING DATA:
+![image](https://github.com/user-attachments/assets/03bc2adb-9329-4a9b-9905-fe9ed86e14ff)
 
 
 ## RESULT:
